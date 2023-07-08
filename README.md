@@ -1,4 +1,4 @@
-<h1 align="center" id="title">ArprSpoofer</h1>
+<h1 align="center" id="title">Arp Spoofer</h1>
 
 <p align="center"><img src="https://img.shields.io/badge/Python-3.10-3776AB.svg?style=flat&amp;logo=python&amp;logoColor=white)](https://www.python.org" alt="project-image"> <img src="https://img.shields.io/badge/Scapy-2.4.5-3776AB.svg?style=flat&amp;logo=scapy&amp;logoColor=white" alt="project-image"></p>
 
@@ -20,8 +20,14 @@
 ```
 pip -r requirements.txt
 ```
-
+You **MUST** enable ip forwarding first:
+```
+echo 1 > /proc/sys/net/ipv4/ip_forward
+```
 <h2>🖥️ Usage: </h2>
+
+
+
 <p>Manual:</p>
 
 
@@ -57,7 +63,7 @@ python arp-spoofer.py --target 10.0.0.5 --gateway 10.0.0.1 --frequency 5
 
 <h2>😉 Tip: </h2>
 
-Use arp-spoofer together with my dns-spoofer for more complex attacks.
+Use arp-spoofer together with my <a href="https://github.com/mirawara/dns-spoofer">dns-spoofer</a> for more complex attacks.
 
 <h2>💖Like my work?</h2>
 
