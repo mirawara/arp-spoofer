@@ -34,7 +34,7 @@ options:
                         IP address of the victim/target
   -g GATEWAY, --gateway GATEWAY
                         IP address of the gateway
-  -n FREQUENCY, --frequency FREQUENCY
+  -f FREQUENCY, --frequency FREQUENCY
                         Number of seconds to wait before retrying the spoof operation
 ```
 
@@ -44,7 +44,7 @@ options:
 1. Spoof ARP between a target (192.168.1.100) and the gateway (192.168.1.1) with a frequency of 2 seconds:
 
 ```
-python arp-spoofer.py -t 192.168.1.100 -g 192.168.1.1 -n 2
+python arp-spoofer.py -t 192.168.1.100 -g 192.168.1.1 -f 2
 ```
 
 2. Spoof ARP between a target (10.0.0.5) and the gateway (10.0.0.1) with a frequency of 5 seconds:

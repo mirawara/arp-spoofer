@@ -13,7 +13,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-t', '--target', dest='target', help='ARP spoof victim', required=True)
     parser.add_argument('-g', '--gateway', dest='gateway', help='Gateway IP', required=True)
-    parser.add_argument('-n', dest='frequency', help='Number of seconds to wait before retrying the spoof operation', required=True)
+    parser.add_argument('-f', dest='frequency', help='Number of seconds to wait before retrying the spoof operation', required=True)
     options = parser.parse_args()
 
     return options
